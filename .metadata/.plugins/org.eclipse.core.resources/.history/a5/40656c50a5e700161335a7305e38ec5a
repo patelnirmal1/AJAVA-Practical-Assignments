@@ -1,0 +1,41 @@
+package A1P5;
+
+import java.applet.Applet;
+import java.awt.*;
+
+public class A1P5 extends Applet{
+		
+	Label name, email, add;
+	TextField nameT, emailT;
+	TextArea addT;
+	Checkbox male, female, agree;
+	CheckboxGroup chG;
+	Button submit;
+	
+	public void init(){
+		setSize(500,500);
+		setLayout(new BorderLayout());
+		name = new Label("Name");
+		email = new Label("Email");
+		add = new Label("Address");
+		nameT = new TextField();
+		emailT = new TextField();
+		addT = new TextArea();
+		submit = new Button("Sign Up");
+		chG=new CheckboxGroup();
+		male=new Checkbox("Male",true,chG);
+		female = new Checkbox("Female",false,chG);
+		agree = new Checkbox("I agree terms and conditions.");
+		
+		add(name);
+		add(nameT);
+		add(email);
+		add(emailT);
+		add(add);
+		add(addT);
+		add(male);
+		add(female);
+		add(agree);
+		add(submit);
+	}
+}

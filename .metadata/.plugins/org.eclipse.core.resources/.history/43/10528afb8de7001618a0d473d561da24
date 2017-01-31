@@ -1,0 +1,13 @@
+package A1P5;
+
+import java.applet.Applet;
+import java.awt.Label;
+
+public class A1P5 extends Applet{
+	Label l;
+	
+	public void init(){
+		setSize(500,500);
+		l = new Label("Registration Form");
+	}
+}

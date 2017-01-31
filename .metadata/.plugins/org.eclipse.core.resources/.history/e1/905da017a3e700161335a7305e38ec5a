@@ -1,0 +1,52 @@
+package A1P5;
+import java.applet.Applet;
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Checkbox;
+import java.awt.CheckboxGroup;
+import java.awt.Label;
+import java.awt.Panel;
+import java.awt.TextArea;
+import java.awt.TextField;
+
+public class A1P5 extends Applet {
+
+	Label name, email, address;
+	TextField nameT, emailT;
+	TextArea addressT;
+	Checkbox male, female, agree;
+	CheckboxGroup chG;
+	Button submit;
+	Panel p1;
+
+	public void init() {
+		// TODO Auto-generated method stub
+		super.init();
+		setSize(800, 800);
+		setLayout(new BorderLayout());
+		name = new Label("Name");
+		email = new Label("Email");
+		address = new Label("Address");
+		nameT = new TextField();
+		emailT = new TextField();
+		addressT = new TextArea();
+		submit = new Button("submit");
+		chG=new CheckboxGroup();
+		male=new Checkbox("Male",true,chG);
+		female = new Checkbox("Female",false,chG);
+		agree = new Checkbox("I agree terms and conditions.");
+		p1=new Panel();
+		p1.add(name);
+		p1.add(nameT);
+		p1.add(email);
+		p1.add(emailT);
+		p1.add(address);
+		p1.add(addressT);
+		p1.add(male);
+		p1.add(female);
+		p1.add(agree);
+		p1.add(submit);
+
+	}
+
+}

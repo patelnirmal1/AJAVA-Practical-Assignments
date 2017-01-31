@@ -1,0 +1,29 @@
+package A1P5;
+
+import java.applet.Applet;
+import java.awt.GridLayout;
+import java.awt.Label;
+import java.awt.TextField;
+
+public class A1P5 extends Applet {
+	
+	Label l,fname,lname;
+	TextField tfname,tlname;
+	public void init(){
+		l = new Label("Registration Form");
+		add(l);
+		
+		GridLayout gl = new GridLayout(2,5);
+		setLayout(gl);
+		
+		fname = new Label("First Name");
+		add(fname);
+		tfname = new TextField(10);
+		add(tfname);
+		lname = new Label("Last Name");
+		add(lname);
+		tlname = new TextField(10);
+		add(tlname);
+	}
+	
+}
