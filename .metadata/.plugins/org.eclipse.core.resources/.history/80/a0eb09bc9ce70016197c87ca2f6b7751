@@ -1,0 +1,14 @@
+package A1P3;
+
+import java.applet.Applet;
+import java.awt.TextField;
+
+public class A1P3 extends Applet{
+	
+	TextField t;
+	
+	public void init(){
+		t = new TextField();
+		add(t);
+	}
+}

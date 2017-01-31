@@ -1,0 +1,13 @@
+package A1P3;
+
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.TextArea;
+
+public class A1P3 extends Applet {
+	
+	public void init(){
+		TextArea t = new TextArea();
+		add(t);
+	}
+}

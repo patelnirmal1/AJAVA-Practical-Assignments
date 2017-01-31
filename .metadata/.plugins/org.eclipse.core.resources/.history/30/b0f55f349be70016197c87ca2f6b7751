@@ -1,0 +1,12 @@
+package A1P3;
+
+import java.applet.Applet;
+import java.awt.Button;
+
+public class A1P3 extends Applet {
+	
+	public void init(){
+		Button a = new Button("1");
+		add(a);
+	}
+}

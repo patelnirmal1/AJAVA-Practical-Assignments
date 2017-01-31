@@ -1,0 +1,5 @@
+INDEX VERSION 1.129+/media/nirmal/Study/Programs/AJAVA Practical Assignments/.metadata/.plugins/org.eclipse.jdt.core
+1758962265.index
+415061718.index
+2262418293.index
+4057920483.index

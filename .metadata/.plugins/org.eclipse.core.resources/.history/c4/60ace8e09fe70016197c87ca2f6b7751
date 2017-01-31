@@ -1,0 +1,46 @@
+package A1P3;
+
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class A1P3 extends Applet {
+	
+	TextField t;
+	Button b[] = new Button[10];
+	Button add,sub,mul,div,clear,EQ;
+	
+	public void init(){
+//		setBackground(Color.blue);
+		t= new TextField(10);
+		GridLayout gl = new GridLayout(4, 5);
+		setLayout(gl);
+		for(int i =0;i<10;i++){
+			b[i]=new Button(""+i);
+		}
+		add = new Button("add");
+		sub = new Button("sub");
+		mul = new Button("mul");
+		div = new Button("div");
+		clear = new Button("clear");
+		EQ = new Button("EQ");
+		
+		add(t);
+		for(int i=0;i<10;i++)
+		{
+			add(b[i]);
+		}
+		add(add);
+		add(sub);
+		add(mul);
+		add(div);
+		add(clear);
+		add(EQ);
+		
+	}
+
+}

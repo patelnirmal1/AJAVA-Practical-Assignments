@@ -1,0 +1,8 @@
+package A1P1;
+
+import java.applet.Applet;
+
+public class A1P1 extends Applet {
+	int x = 0 , y=100;
+	
+}

@@ -1,0 +1,6 @@
+package A1P4;
+import java.applet.*;
+
+public class A1P4 extends Applet{
+	
+}

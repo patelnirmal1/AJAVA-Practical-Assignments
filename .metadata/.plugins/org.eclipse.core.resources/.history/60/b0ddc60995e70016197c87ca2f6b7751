@@ -1,0 +1,12 @@
+package AIP2;
+
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class A1P2 extends Applet {
+	public void paint(Graphics g){
+		g.setColor(Color.blue);
+		g.drawRect(0,0,100, 50);
+	}
+}
